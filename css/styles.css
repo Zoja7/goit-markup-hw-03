@@ -62,13 +62,14 @@ img{
 /*=======Header=======*/
 .page-header {
     border-bottom: 1px solid var(--border-line-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .page-header-conteiner {
     display: flex;
     align-items: center;  
-    padding-top: 24px;
-    padding-bottom: 24px;
+   
 }
 
 .page-navigation {
