@@ -137,7 +137,6 @@ img{
 /*====Hero=====*/
 
 .hero {
-   
     padding-top: 188px;
     padding-bottom: 188px;
     background-color: var(--accent-color);
@@ -209,7 +208,9 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--logo-color);  
+    margin-right: 76px;
 }
+
 .page-logo-dark {
     font-family: var(--second-font-family);
     font-weight: 800;
@@ -218,8 +219,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--accent-color);
-    /*margin-right: 76px;*/
-}
+} 
 
 .page-logo-light {
     font-family: var(--second-font-family);
@@ -229,7 +229,6 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--second-color); 
-    margin-right: 76px;
 }
 
 /*==section 2==*/
