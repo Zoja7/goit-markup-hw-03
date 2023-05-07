@@ -45,9 +45,6 @@ ul{
     margin-bottom: 0;
     padding-left:0;
 }
-img{
-    display:block;
-}
 
 .container {
     width: 1158px;
@@ -55,15 +52,16 @@ img{
     padding-left: 15px;
     padding-right: 15px;
 }
-
-
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 /*======/Reset_Settings_of_pages=====*/
 
 /*=======Header=======*/
 .page-header {
     border-bottom: 1px solid var(--border-line-color);
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .page-header-container {
@@ -75,7 +73,6 @@ img{
 .page-navigation {
     display:flex;
     align-items:center;
-    gap: 78px;
 }
 .menu-list {
     display:flex;
@@ -83,7 +80,7 @@ img{
     gap: 40px;
 }
 .menu-item {
-    margin-right: 40px;
+    display: flex;
 }
 
 .menu-item:last-child {
@@ -107,9 +104,7 @@ img{
 }
 
 .contacts {
-    display: flex;
     margin-left: auto;
-
     font-style: normal;
 }
 
@@ -142,13 +137,11 @@ img{
     background-color: var(--accent-color);
     
 }
-.hero-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-     
-}
+
 .hero-title {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 496px;
 
     font-weight: 700;
@@ -161,6 +154,10 @@ img{
 }
 
 .hero-button {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
     display:block;
     min-width: 169px;
     height: 56px;
@@ -189,17 +186,8 @@ img{
 }
 /*======/Hero=====/
 
-/*======Components======*/
-
-/*==General components==*/
-
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
 /*==Studio components==*/
+
 .page-logo-web {
     font-family:var(--second-font-family);
     font-weight: 800;
@@ -221,18 +209,20 @@ img {
     color: var(--accent-color);
 } 
 
-.page-logo-light {
-    font-family: var(--second-font-family);
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--second-color); 
-}
-
 /*==section 2==*/
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 .advanteges{
     padding-top: 120px;
     padding-bottom: 120px;
@@ -249,7 +239,6 @@ img {
     flex-basis: calc((100% - 72px) / 4);
 }
 
-/*==both_for_sections:2,3==*/
 .title-second-h {
     margin-bottom: 8px;
     font-weight: 500;
@@ -266,7 +255,6 @@ img {
     color: var(--third-color);
    
 }
-
 
 /*==section 3==*/
 
@@ -342,12 +330,26 @@ img {
     background-color: var(--accent-color);
 }
 
-.footer-logo {
-    display: inline-block;
-    
-}
-.logo-margin {
+.footer-logo-web{
+    font-family: var(--second-font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--logo-color);
     margin-bottom: 16px;
+    display: inline-block;
+}
+
+.footer-logo-light {
+    font-family: var(--second-font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-color);
 }
 
 .footer-description-light {
@@ -373,6 +375,7 @@ img {
     margin-right: 0;
 }
 /*==Portfolio_components==*/
+
 .filter-button {
 
     border: 1px solid #E7E9FC;
@@ -399,6 +402,8 @@ img {
     background-color: var(--hover-color);
     border: 1px solid transparent;
 }
+/*===/Portfolio components==*/
+
 .title-first {
     font-weight: 700;
     font-size: 36px;
